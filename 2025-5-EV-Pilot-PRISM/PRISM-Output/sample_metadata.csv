@@ -1,0 +1,49 @@
+sample,sample_type,Analyte Concentration,Group,Genotype,Age,Sex
+A1-DDY6-001,experimental,,KO Control,fl/fl; +/+,7.0,F
+A2-DDZ1-002,experimental,,KO,fl/fl; CAG/+,7.0,M
+A3-174-003,experimental,,KI Control,WT,12.0,M
+A4-CarrollPool-004,reference,,Pool,,,
+A5-DGA1-005,experimental,,KO Control,fl/fl; +/+,7.0,F
+A6-DGA3-006,experimental,,KO,fl/fl; CAG/+,,F
+A7-178-007,experimental,,KI Control,WT,12.0,M
+A8-153-008,experimental,,KI,Q111,12.0,F
+A9-CarlC57BL-009,qc,,Carl,,,
+A10-168-010,experimental,,KI Control,WT,12.0,F
+A11-121-011,experimental,,KI,Q111,12.0,M
+A12-DFS2-012,experimental,,KO Control,fl/fl; +/+,7.0,M
+B1-CarrollPool-013,reference,,Pool,,,
+B2-130-014,experimental,,KI,Q111,12.0,M
+B3-DDY5-015,experimental,,KO,fl/fl; CAG/+,7.0,F
+B4-173-016,experimental,,KI Control,WT,12.0,M
+B5-DDZ2-017,experimental,,KO,fl/fl; CAG/+,7.0,M
+B6-160-018,experimental,,KI,Q111,12.0,F
+B7-DBB3-019,experimental,,KO Control,fl/fl; +/+,7.0,M
+B8-DEF7-020,experimental,,KO,fl/fl; CAG/+,7.0,F
+B9-164-021,experimental,,KI Control,WT,12.0,F
+B10-DGA4-022,experimental,,KO Control,fl/fl; +/+,,F
+B11-CarlC57BL-023,qc,,Carl,,,
+B12-125-024,experimental,,KI,Q111,12.0,M
+C1-DEF5-025,experimental,,KO,fl/fl; CAG/+,7.0,F
+C2-181-026,experimental,,KI Control,WT,12.0,M
+C3-CarlC57BL-027,qc,,Carl,,,
+C4-157-028,experimental,,KI,Q111,12.0,F
+C5-CarrollPool-029,reference,,Pool,,,
+C6-DFQ2-030,experimental,,KO Control,fl/fl; +/+,7.0,F
+C7-122-031,experimental,,KI,Q111,12.0,M
+C8-172-032,experimental,,KI Control,WT,12.0,F
+C9-DFT2-033,experimental,,KO Control,fl/fl; +/+,,M
+C10-DFS1-034,experimental,,KO,fl/fl; CAG/+,7.0,M
+C11-DEC1-035,experimental,,KO Control,fl/fl; +/+,7.0,M
+C12-177-036,experimental,,KI Control,WT,12.0,M
+D1-152-037,experimental,,KI,Q111,12.0,F
+D2-DFQ3-038,experimental,,KO Control,fl/fl; +/+,7.0,F
+D3-185-039,experimental,,KI Control,WT,12.0,F
+D4-DDY4-040,experimental,,KO,fl/fl; CAG/+,7.0,F
+D5-145-041,experimental,,KI Control,WT,12.0,F
+D6-CarlC57BL-042,qc,,Carl,,,
+D7-DFQ1-043,experimental,,KO,fl/fl; CAG/+,7.0,M
+D8-DFT1-044,experimental,,KO Control,fl/fl; +/+,7.0,M
+D9-156-045,experimental,,KI,Q111,12.0,F
+D10-CarrollPool-046,reference,,Pool,,,
+D11-DFS3-047,experimental,,KO,fl/fl; CAG/+,7.0,M
+D12-129-048,experimental,,KI,Q111,12.0,M

@@ -1,0 +1,49 @@
+Replicate,Sample Type,Analyte Concentration,Group,Genotype,Age,Sex
+A1-DDY6-001,Unknown,,KO Control,fl/fl; +/+,7,F
+A2-DDZ1-002,Unknown,,KO,fl/fl; CAG/+,7,M
+A3-174-003,Unknown,,KI Control,WT,12,M
+A4-CarrollPool-004,Unknown,,Pool,,#N/A,
+A5-DGA1-005,Unknown,,KO Control,fl/fl; +/+,7,F
+A6-DGA3-006,Unknown,,KO,fl/fl; CAG/+,#N/A,F
+A7-178-007,Unknown,,KI Control,WT,12,M
+A8-153-008,Unknown,,KI,Q111,12,F
+A9-CarlC57BL-009,Unknown,,Carl,,#N/A,
+A10-168-010,Unknown,,KI Control,WT,12,F
+A11-121-011,Unknown,,KI,Q111,12,M
+A12-DFS2-012,Unknown,,KO Control,fl/fl; +/+,7,M
+B1-CarrollPool-013,Unknown,,Pool,,#N/A,
+B2-130-014,Unknown,,KI,Q111,12,M
+B3-DDY5-015,Unknown,,KO,fl/fl; CAG/+,7,F
+B4-173-016,Unknown,,KI Control,WT,12,M
+B5-DDZ2-017,Unknown,,KO,fl/fl; CAG/+,7,M
+B6-160-018,Unknown,,KI,Q111,12,F
+B7-DBB3-019,Unknown,,KO Control,fl/fl; +/+,7,M
+B8-DEF7-020,Unknown,,KO,fl/fl; CAG/+,7,F
+B9-164-021,Unknown,,KI Control,WT,12,F
+B10-DGA4-022,Unknown,,KO Control,fl/fl; +/+,#N/A,F
+B11-CarlC57BL-023,Unknown,,Carl,,#N/A,
+B12-125-024,Unknown,,KI,Q111,12,M
+C1-DEF5-025,Unknown,,KO,fl/fl; CAG/+,7,F
+C2-181-026,Unknown,,KI Control,WT,12,M
+C3-CarlC57BL-027,Unknown,,Carl,,#N/A,
+C4-157-028,Unknown,,KI,Q111,12,F
+C5-CarrollPool-029,Unknown,,Pool,,#N/A,
+C6-DFQ2-030,Unknown,,KO Control,fl/fl; +/+,7,F
+C7-122-031,Unknown,,KI,Q111,12,M
+C8-172-032,Unknown,,KI Control,WT,12,F
+C9-DFT2-033,Unknown,,KO Control,fl/fl; +/+,#N/A,M
+C10-DFS1-034,Unknown,,KO,fl/fl; CAG/+,7,M
+C11-DEC1-035,Unknown,,KO Control,fl/fl; +/+,7,M
+C12-177-036,Unknown,,KI Control,WT,12,M
+D1-152-037,Unknown,,KI,Q111,12,F
+D2-DFQ3-038,Unknown,,KO Control,fl/fl; +/+,7,F
+D3-185-039,Unknown,,KI Control,WT,12,F
+D4-DDY4-040,Unknown,,KO,fl/fl; CAG/+,7,F
+D5-145-041,Unknown,,KI Control,WT,12,F
+D6-CarlC57BL-042,Unknown,,Carl,,#N/A,
+D7-DFQ1-043,Unknown,,KO,fl/fl; CAG/+,7,M
+D8-DFT1-044,Unknown,,KO Control,fl/fl; +/+,7,M
+D9-156-045,Unknown,,KI,Q111,12,F
+D10-CarrollPool-046,Unknown,,Pool,,#N/A,
+D11-DFS3-047,Unknown,,KO,fl/fl; CAG/+,7,M
+D12-129-048,Unknown,,KI,Q111,12,M

@@ -1,0 +1,110 @@
+# PRISM Minimal Configuration Template
+# =====================================
+# This template includes only the most commonly-changed options.
+# For all options, run: prism config-template
+#
+# Usage: prism run -i data.csv -o output/ -c this_config.yaml
+#
+# BEFORE RUNNING - edit the two paths marked EDIT REQUIRED below:
+#   1. transition_rollup.library_assist.library_path  (spectral library)
+#   2. parsimony.fasta_path                           (search FASTA database)
+
+# =============================================================================
+# Sample Type Detection (IMPORTANT - customize for your naming convention)
+# =============================================================================
+sample_annotations:
+  # Patterns to identify inter-experiment reference samples
+  # (used for learning technical variation)
+  reference_pattern:
+    - "-CarrollPool-"
+
+  # Patterns to identify intra-experiment QC samples
+  # (used for validating corrections)
+  qc_pattern:
+    - "-CarlC57"
+
+# =============================================================================
+# Protein Parsimony
+# =============================================================================
+# EDIT REQUIRED: Set fasta_path to the FASTA database used for your search.
+parsimony:
+  fasta_path: "uniprot_mouse_may2025_contam_yeastENO1.fasta"  # <<< EDIT REQUIRED: "/path/to/your/search_database.fasta"
+  shared_peptide_handling: "all_groups"
+
+# =============================================================================
+# Processing Options
+# =============================================================================
+processing:
+  # Number of parallel workers (0 = all CPUs, 1 = single-threaded)
+  n_workers: 1
+
+# =============================================================================
+# Transition to Peptide Rollup
+# =============================================================================
+# library_assist uses a spectral library to detect and exclude interfered
+# transitions before summing. This gives the best CVs when a library is available.
+#
+# EDIT REQUIRED: Set library_path to your spectral library (.blib or .tsv).
+transition_rollup:
+  method: "library_assist"
+  min_transitions: 3
+  library_assist:
+    library_path: "2025-5-Carroll-Mouse-EV-redo.blib"  # <<< EDIT REQUIRED: "/path/to/your/library.blib"
+    fitting_method: "median_polish"  # RECOMMENDED: robust to 1-2 interfered transitions
+    outlier_threshold: 1.0           # obs > 2x predicted = interference
+    remove_outliers: true
+
+# =============================================================================
+# Global (Peptide-Level) Normalization
+# =============================================================================
+# rt_lowess corrects RT-dependent systematic effects (ion suppression, gradient
+# drift) in addition to overall loading differences.
+global_normalization:
+  method: "rt_lowess"
+  rt_lowess:
+    frac: 0.3
+    n_grid_points: 100
+
+# =============================================================================
+# Batch Correction
+# =============================================================================
+# ComBat empirical Bayes batch correction. Automatically skipped when only
+# one batch is detected.
+batch_correction:
+  enabled: false
+  method: "combat"
+
+# =============================================================================
+# Protein Rollup
+# =============================================================================
+# median_polish is robust to outlier peptides (e.g., those with interference
+# or PTMs that escape detection).
+protein_rollup:
+  method: "median_polish"
+  min_peptides: 2
+
+# =============================================================================
+# Protein Normalization
+# =============================================================================
+protein_normalization:
+  method: "median"
+
+# =============================================================================
+# Output Options
+# =============================================================================
+output:
+  format: "parquet"
+  include_residuals: true
+
+# =============================================================================
+# QC Report
+# =============================================================================
+qc_report:
+  enabled: true
+  save_plots: true
+  embed_plots: true
+  plots:
+    intensity_distribution: true
+    pca_comparison: true
+    control_correlation: true
+    cv_distribution: true

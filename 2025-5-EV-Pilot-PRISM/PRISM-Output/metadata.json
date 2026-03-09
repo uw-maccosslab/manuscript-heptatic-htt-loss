@@ -1,0 +1,48 @@
+{
+  "pipeline_version": "26.3.3",
+  "processing_date": "2026-03-08T21:28:35.907832+00:00",
+  "source_files": [
+    "/mnt/UNAS-DataAnalysis/2025-5-Carroll-Mouse-EV/2025-5-Carroll-Mouse-EV-PRISM.parquet"
+  ],
+  "metadata_files": [
+    "/mnt/UNAS-DataAnalysis/2025-5-Carroll-Mouse-EV/2025-5-Carroll-Mouse-EV-ReplicatesMetaData.csv"
+  ],
+  "metadata_source": "user_provided",
+  "processing_parameters": {
+    "transition_rollup": {
+      "method": "library-assisted",
+      "min_transitions": 3,
+      "use_ms1": false
+    },
+    "protein_rollup": {
+      "method": "median_polish",
+      "shared_peptide_handling": "all_groups",
+      "min_peptides": 2
+    },
+    "batch_correction": {
+      "enabled": false,
+      "method": "combat"
+    }
+  },
+  "method_log": [
+    "Merged and sorted 1 reports (50,051,520 rows)",
+    "Loaded metadata: 2025-5-Carroll-Mouse-EV-ReplicatesMetaData.csv",
+    "Transition rollup (library-assisted): 106,848 peptides, 48 samples",
+    "  Library: 124,809 matched, 0 unmatched (100.0%)",
+    "RT-lowess normalization: frac=0.3, max correction=7.18 log2 (144.85x)",
+    "Protein rollup (median_polish): 9,147 proteins from 9,147 groups",
+    "Protein median normalization: max shift = 1.19x"
+  ],
+  "output_files": {
+    "peptides": "PRISM-Output/corrected_peptides.parquet",
+    "proteins": "PRISM-Output/corrected_proteins.parquet",
+    "protein_groups": "PRISM-Output/protein_groups.csv"
+  },
+  "statistics": {
+    "n_samples": 48,
+    "n_peptides": 106848,
+    "n_transitions": 853948,
+    "n_proteins": 9147,
+    "n_protein_groups": 9147
+  }
+}
