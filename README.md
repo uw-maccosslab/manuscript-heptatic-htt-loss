@@ -11,7 +11,7 @@ Proteomics characterization of extracellular vesicle (EV) proteomes from two mou
 - **KI model** — Q111 knock-in allele (12 weeks)
 - **KO model** — Conditional knockout via CAG-Cre (7 weeks)
 
-48 samples across 4 batches. Primary contrasts: KI vs KI Control, KO vs KO Control.
+48 samples within 1 batch. Primary comparisons: KI vs KI Control, KO vs KO Control.
 
 ### Analysis Arms
 
@@ -141,3 +141,4 @@ Configuration: [`2025-5-EV-Pilot-PRISM/prism-config.yaml`](2025-5-EV-Pilot-PRISM
 
 - **MacCoss Lab:** [maccosslab.org](https://maccosslab.org) — University of Washington, Department of Genome Sciences
 - **Carroll Lab:** University of Washington — Huntington's disease research
+
