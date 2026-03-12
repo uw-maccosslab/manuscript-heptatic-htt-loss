@@ -1,6 +1,6 @@
 # collab-uw-carroll
 
-Collaboration repository for the [MacCoss Lab](https://maccosslab.org) and [Jeff Carroll Lab](https://carrolllab.org) at the University of Washington.
+Collaboration repository for the [MacCoss Lab](https://maccosslab.org) and [Jeff Carroll Lab](https://sites.uw.edu/jeffcarr/) at the University of Washington.
 
 ---
 
@@ -141,4 +141,5 @@ Configuration: [`2025-5-EV-Pilot-PRISM/prism-config.yaml`](2025-5-EV-Pilot-PRISM
 
 - **MacCoss Lab:** [maccosslab.org](https://maccosslab.org) — University of Washington, Department of Genome Sciences
 - **Carroll Lab:** University of Washington — Huntington's disease research
+
 
