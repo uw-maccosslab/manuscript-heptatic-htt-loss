@@ -1,6 +1,4 @@
-# collab-uw-carroll
-
-Collaboration repository for the [MacCoss Lab](https://maccosslab.org) and [Jeff Carroll Lab](https://sites.uw.edu/jeffcarr/) at the University of Washington.
+# Hepatic huntingtin loss drives an acute phase response and liver injury in multiple mouse models
 
 ---
 
